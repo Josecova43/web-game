@@ -2,7 +2,7 @@
     display: block;
     height: 200px;
     padding:20px;
-    border: 3px dotted white
+    border: 3px solid blue
 
 
 }
@@ -30,47 +30,22 @@
 }
 
 
-.options{
+.options button{
     display: flex;
-    flex-direction:column;
+    flex-direction:block;
     justify-content: center;
+    align-items: flex-end;
     border: 3px solid white;
-    height: 8cm;
+    width: auto;
     margin-top: 30px;
     font-family: monospace;
     font-size:23px;
     font-weight: bolder;
     animation: 3s  alternate slidein;
     color:yellowgreen;
-    background-color: darkslategrey;
+    background-color: rgb(29, 54, 54);
+    
   
 
 }
-
-.startBtn{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-   }
-
-.how-to-play{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    
-}
-
-.credits{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-   
-}
-
-
-
-
 
