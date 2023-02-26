@@ -11,14 +11,44 @@
 </head>
 
 <body>
-   <h1> Trivia Game</h1>
-
-   <div>
+   <div id="display">
+    <h1> Trivia Game</h1>
+    <div class="box">
+   <div id="info"> 
     <h2> Question:<span id="question"></span></h2>
-    <h4> Category is:<span id="category"></span></h4>
+     <h4> Category is:<span id="category"></span></h4>
+    
    </div>
 
-  
+   <div class="form">
+   
+        <p>Select the correct answer    </p>
+            <div class="choices">  
+                <input  type="radio" name="choice" id="choice1" value="" >
+                <label  id="choice1label" for="choice1"></label>
+                <input type="radio"  name="choice"id="choice2" value="">
+                <label  id="choice2label"for="choice2"></label>
+                
+                <input type="radio" name="choice" id="choice3" value="">
+                <label  id="choice3label"for="choice3"></label>
+                
+                <input type="radio" name="choice" id="choice4" value="">
+                <label  id="choice4label"for="choice4"></label>
+                
+            </div>
+            <div class="btns">
+                <button  class="btn-submit" id="submit">Submit!</button>
+                
+            
+                <button  class="next" id="next"> Next Question</button>
+            </div>
+</div>
+            <h2 id="result"></h2>
+            <div>
+   </div>
+   </div>
+
+  </div>
     
 </body>
 </html>
