@@ -1,6 +1,6 @@
 
 window.onload = trivia
-//this is how i get the api for the trivia game, I use the example as making the interactive map
+//this is how i get the api for the trivia game, I use the example as making the interactive map README#1
 async function trivia(){
     let response = await fetch(' https://opentdb.com/api.php?amount=10&type=multiple')
     let data = await response.json();
@@ -10,10 +10,10 @@ async function trivia(){
 
 
 // this function is to shuffle my answers 
-function shuffleArray(arr) {
-    for(let i = arr.length - 1; i >= 0; i--) {
+function shuffleArray(array) {
+    for(let i = array.length - 1; i >= 0; i--) {
     const s = Math.floor(Math.random() * (i+1));
-    [arr[i], arr[s]] = [arr[s], arr[i]];
+    [array[i], array[s]] = [array[s], array[i]];
 
    
 
@@ -34,7 +34,7 @@ trivia().then((data) => {
 
 
 
-  //below to everytime the page reload, the answers will shuffled 
+  //below to everytime the page reload, the answers will shuffled .README#2
     shuffleArray(answers);
     for (let i = 0; i < 4; i++) {
       let index = i + 1;
@@ -61,7 +61,7 @@ trivia().then((data) => {
     })
    }
    )
-    document.getElementById('next').addEventListener('click', () =>{  // event listener for evrytime the user click next the page will reload woth the next question
+    document.getElementById('next').addEventListener('click', () =>{  // event listener for evrytime the user click next the page will reload with the next question
       location.reload();
     })
     
