@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import 'animate.css';
+
 
 body{
   font-family: 'Tilt Neon', cursive;
@@ -12,6 +14,7 @@ body{
 
 }
 
+
   
 
 .all{
@@ -24,6 +27,7 @@ h1{
   justify-content: center;
   font-size: 88px;
   font-weight: 600;
+ 
  
 
   
@@ -90,7 +94,7 @@ h2>span, h4>span{
  ;
 }
 
-.btn-submit:active, .next:active{
+.btn-submit, .next{
   border:none;
    border-radius: 5px;
   padding:16px 20px;

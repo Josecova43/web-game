@@ -9,7 +9,7 @@ async function trivia(){
 }
 
 
-// this function is to shuffle my answers 
+// this function is to shuffle my questions
 function shuffleArray(array) {
     for(let i = array.length - 1; i >= 0; i--) {
     const s = Math.floor(Math.random() * (i+1));
@@ -42,6 +42,7 @@ trivia().then((data) => {
       document.getElementById(`choice${index}`).value = answers[i];
         
     }
+   
 
 
     
@@ -52,12 +53,13 @@ trivia().then((data) => {
         console.log(el.value);
         console.log(results.correct_answer);
 
-       // boolean to check is the answers are tru or false
+       // boolean to check is the answers are true or false
          if (el.value === results.correct_answer){
           result.innerHTML = "Correct! :)";
 
          } else result.innerHTML= `Sorry :(, the Correct Answer is ${results.correct_answer}`
        }
+     
     })
    }
    )
